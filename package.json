@@ -3,9 +3,16 @@
   "version": "0.0.0",
   "description": "A websocket live stream",
   "main": "index.js",
+  "bin": {
+    "wls-send": "./bin/send",
+    "wls-receive": "./bin/receive"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "websocket-stream": "^3.0.1"
+  }
 }
